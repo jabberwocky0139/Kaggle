@@ -153,10 +153,6 @@ train_y = train['target']
 train_x = train.drop('target', axis=1)
 test_x = test.copy()
 
-# 特徴量追加
-# train_x['cont5_6'] = train_x['cont5'] * train_x['cont6']
-# test_x['cont5_6'] = test_x['cont5'] * test_x['cont6']
-
 # RandomForestで重要度を推定
 # rf_importance(train_x, train_y)
 
